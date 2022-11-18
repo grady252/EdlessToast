@@ -1,0 +1,12 @@
+{
+  "name": "EdlessToast",
+  "version": "1.0.0",
+  "description": "A Toast!",
+  "main": "index.js",
+  "repository": "https://github.com/grady252/EdlessToast.git",
+  "author": "grady252",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
