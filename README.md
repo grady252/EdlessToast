@@ -70,4 +70,4 @@ const { openToast, closeToast } = useToast();
 
 The `openToast` method will open a toast, and takes one argument `options` which are the props that should be passed to your toast element.
 
-The `clostToast` method will close an open toast.
+The `closeToast` method will close an open toast.
