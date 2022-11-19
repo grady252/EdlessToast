@@ -1,6 +1,6 @@
 {
   "name": "edlesstoast",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Toast!",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
