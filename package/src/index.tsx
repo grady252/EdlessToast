@@ -9,7 +9,7 @@ interface Props {
     children?: React.ReactNode,
     toastElement?: JSX.Element,
     toastVisableTime?: number,
-    toastFadeOutTime?: number,
+    toastFadeTime?: number,
 }
 
 interface ContextState {
@@ -22,7 +22,7 @@ const Ctx = React.createContext({} as ContextState);
 export function ToastProvider({ children,
     toastElement = <DefaultToast />,
     toastVisableTime = 5000,
-    toastFadeOutTime = 500
+    toastFadeTime = 500
 }: Props) {
     const [visable, setVisable] = useState(false);
     const [shouldBeClosed, setShouldBeClosed] = useState(false);
@@ -52,7 +52,7 @@ export function ToastProvider({ children,
             {children}
             <div style={{
                 opacity: visable ? 1 : 0,
-                transition: shouldBeClosed ? '' : visable ? 'opacity 0s' : `opacity ${toastFadeOutTime}ms ${toastVisableTime}ms`
+                transition: shouldBeClosed ? '' : visable ? 'opacity 0s' : `opacity ${toastFadeTime}ms ${toastVisableTime}ms`
             }}>
                 <toastElement.type {...props} />
             </div>
